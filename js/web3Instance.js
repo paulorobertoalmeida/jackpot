@@ -1,14 +1,14 @@
 const web3 = new Web3(window.ethereum);
 
-const JACKPOT = '';
+const JACKPOT = [{"inputs":[{"internalType":"address payable","name":"holdersAddr","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"totalAmount","type":"uint256"}],"name":"FeePayed","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint8","name":"plan","type":"uint8"},{"indexed":false,"internalType":"uint256","name":"percent","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"profit","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"start","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"finish","type":"uint256"}],"name":"NewDeposit","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"user","type":"address"}],"name":"Newbie","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"referrer","type":"address"},{"indexed":true,"internalType":"address","name":"referral","type":"address"},{"indexed":true,"internalType":"uint256","name":"level","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"RefBonus","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"_prev","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"_new","type":"uint256"}],"name":"SetExtraGas","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"_prev","type":"address"},{"indexed":false,"internalType":"address","name":"_new","type":"address"}],"name":"SetHeap","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"_from","type":"address"},{"indexed":false,"internalType":"address","name":"_to","type":"address"}],"name":"TransferOwnership","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_addr","type":"address"},{"indexed":false,"internalType":"uint256","name":"_value","type":"uint256"}],"name":"Winner","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"user","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Withdrawn","type":"event"},{"inputs":[],"name":"DECREASE_DAY_STEP","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"HOLDERS_FEE","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"INVEST_MIN_AMOUNT","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"INVEST_MIN_TO_REFER","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"LAUNCH_TIME","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"LUCKYDRAW_FEE","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"PERCENTS_DIVIDER","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"PERCENT_STEP","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"REFERRAL_PERCENTS","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"TIME_STEP","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"UNLOCK_REFERRER_FEE","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"extraGas","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getContractBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"planTime","type":"uint256"}],"name":"getDecreaseDays","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_addr","type":"address"},{"internalType":"uint256","name":"_cat","type":"uint256"}],"name":"getNonce","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint8","name":"plan","type":"uint8"}],"name":"getPercent","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint8","name":"plan","type":"uint8"}],"name":"getPlanInfo","outputs":[{"internalType":"uint256","name":"time","type":"uint256"},{"internalType":"uint256","name":"percent","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint8","name":"plan","type":"uint8"},{"internalType":"uint256","name":"deposit","type":"uint256"}],"name":"getResult","outputs":[{"internalType":"uint256","name":"percent","type":"uint256"},{"internalType":"uint256","name":"profit","type":"uint256"},{"internalType":"uint256","name":"current","type":"uint256"},{"internalType":"uint256","name":"finish","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"}],"name":"getUserAmountOfDeposits","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"}],"name":"getUserAmountOfPenaltyDeposits","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"}],"name":"getUserAvailable","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"}],"name":"getUserCheckpoint","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"getUserDepositInfo","outputs":[{"internalType":"uint8","name":"plan","type":"uint8"},{"internalType":"uint256","name":"percent","type":"uint256"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"uint256","name":"profit","type":"uint256"},{"internalType":"uint256","name":"start","type":"uint256"},{"internalType":"uint256","name":"finish","type":"uint256"},{"internalType":"bool","name":"force","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"}],"name":"getUserDividends","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"},{"internalType":"uint256","name":"level","type":"uint256"}],"name":"getUserDownlineCount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"}],"name":"getUserReferralTotalBonus","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"}],"name":"getUserReferrer","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"userAddress","type":"address"}],"name":"getUserTotalDeposits","outputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"heap","outputs":[{"internalType":"contract Heap","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_i","type":"uint256"}],"name":"heapEntry","outputs":[{"internalType":"address","name":"","type":"address"},{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_addr","type":"address"}],"name":"heapIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"heapSize","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"heapTop","outputs":[{"internalType":"address","name":"","type":"address"},{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"holdersAddress","outputs":[{"internalType":"address payable","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_referrer","type":"address"},{"internalType":"uint8","name":"plan","type":"uint8"}],"name":"invest","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"isValidReferrer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint8","name":"plan","type":"uint8"}],"name":"reInvest","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_gas","type":"uint256"}],"name":"setExtraGas","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"contract Heap","name":"_heap","type":"address"}],"name":"setHeap","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_owner","type":"address"}],"name":"setOwner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"topSize","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalStaked","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"totalUserDepositValue","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"unlockReferrer","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"users","outputs":[{"internalType":"uint256","name":"checkpoint","type":"uint256"},{"internalType":"address","name":"referrer","type":"address"},{"internalType":"uint256","name":"totalBonus","type":"uint256"},{"internalType":"uint256","name":"holdBonus","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"withdraw","outputs":[],"stateMutability":"nonpayable","type":"function"}]
 
-const jackpotAddress = '';
+const jackpotAddress = '0xA9Fe6C45C14012ACFdefb19EB90d42dd14Fa9482';
 
+const holdersAddress = '';
 
 var jackpot = new web3.eth.Contract(JACKPOT, jackpotAddress);
 
-var bnbBalance;
-var ethAddress = "";
+var walletAddress = web3.givenProvider.selectedAddress;
 
 
 //Balance of user in each plan
@@ -44,217 +44,118 @@ var rubyTotalStaked;
 var sapphireTotalStaked;
 
 
-async function getGoldRoi() {
-	let _uniSupply = await gold.methods.totalSupply().call();
-        let _goldDiff = await pumpkin.methods.difficultyGold().call();
-        let _pumpkinOnPair = await gold.methods.getReserves().call();
-        let _halloweenAmount = _pumpkinOnPair[0];
-	let _pumpkinAmount = _pumpkinOnPair[1];
-        let _totalPumpkinValue = _pumpkinAmount * 2;
-        let _uniPumpkinValue = _totalPumpkinValue/_uniSupply;
-	let _roi = 2252571/_goldDiff/_uniPumpkinValue*100;
-	let _goldRoi = document.getElementById("goldroi");
-	_goldRoi.innerHTML = Number(_roi).toFixed(2);
-}
 
-async function getSilverRoi() {
-        let _pumpkinOnCauld = await gold.methods.getReserves().call();
-        let _halloweenAmountCauld = _pumpkinOnCauld[0];
-	let _pumpkinAmountCauld = _pumpkinOnCauld[1];
-	let _halloweenPrice = _pumpkinAmountCauld/_halloweenAmountCauld;
-	let _uniSupply = await silver.methods.totalSupply().call();
-        let _silverDiff = await pumpkin.methods.difficultySilver().call();
-	let _silverInfo = await silver.methods.getReserves().call();
-	let _halloweenAmount = _silverInfo[1];
-	let _totalPumpkinValue = _halloweenAmount * 2 * _halloweenPrice;
-	let _uniSilverValue = _totalPumpkinValue/_uniSupply;
-	let _roi = 2252571/_silverDiff/_uniSilverValue*100;
-	let _silverRoi = document.getElementById("silverroi");
-	_silverRoi.innerHTML = Number(_roi).toFixed(2);
+//STAKE PLANS
 
-}
-
-
-
-async function getBronzeRoi() {
-        let _pumpkinOnCauld = await gold.methods.getReserves().call();
-        let _halloweenAmountCauld = _pumpkinOnCauld[0];
-	let _pumpkinAmountCauld = _pumpkinOnCauld[1];
-	let _halloweenPrice = _pumpkinAmountCauld/_halloweenAmountCauld;
-	let _uniSupply = await bronze.methods.totalSupply().call();
-        let _bronzeDiff = await pumpkin.methods.difficultyBronze().call();
-	let _bronzeInfo = await bronze.methods.getReserves().call();
-	let _halloweenAmount = _bronzeInfo[0];
-	let _totalPumpkinValue = _halloweenAmount * 2 * _halloweenPrice;
-	let _uniBronzeValue = _totalPumpkinValue/_uniSupply;
-	let _roi = 2252571/_bronzeDiff/_uniBronzeValue*100;
-	let _bronzeRoi = document.getElementById("bronzeroi");
-	_bronzeRoi.innerHTML = Number(_roi).toFixed(2);
-
-}
-
-
-
-
-async function claimRewards() {
-     await this.jackpot.methods.claim().send({
-        from: ethAddress
-      });
-}
-
-async function stakedGold() {
-        await pumpkin.methods.getGold(ethAddress).call().then(r => {
-          document.getElementById('rightTokens').innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-          document.getElementById('balanceorstaked').innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-        });
-}
-
-async function stakedSilver() {
-        await pumpkin.methods.getSilver(ethAddress).call().then(r => {
-          document.getElementById('rightTokens').innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-          document.getElementById('balanceorstaked').innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-        });
-}
-
-async function stakedBronze() {
-        await pumpkin.methods.getBronze(ethAddress).call().then(r => {
-          document.getElementById('rightTokens').innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-          document.getElementById('balanceorstaked').innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-        });
-}
-
-async function claimGoldRewards() {
-     await this.halloweenInstance.methods.getPumpkinReward().send({
-        from: ethAddress
-      });
-}
-
-
-async function pendingReward() {
-        await pumpkin.methods.totalRewardPending(ethAddress).call().then(r => {
-          document.getElementById('leftTokens').innerHTML = Number(web3.utils.fromWei(r)).toFixed(3);
-        });
-}
-
-
-async function stakegold() {
-	var goldinput = document.getElementById("toStake");
+async function depositGold() {
+	var goldinput = document.getElementById("toStakeGold");
 	var amount = await goldinput.value;
-	await pumpkin.methods.stakeGold(web3.utils.toWei(amount)).send( {from: web3.givenProvider.selectedAddress, gas: 200000}).on('receipt', function(receipt) {
+	var user_referrer = holdersAddress;
+	await jackpot.methods.invest(user_referrer, 0).send( 
+		{from: web3.givenProvider.selectedAddress,
+		value: web3.utils.toWei(amount)}).on('receipt', function(receipt) {
 		console.log(receipt);
 	});
 }
 
-async function stakesilver() {
-	var silverinput = document.getElementById("toStake");
+async function depositSilver() {
+	var silverinput = document.getElementById("toStakeSilver");
 	var amount = await silverinput.value;
-	await pumpkin.methods.stakeSilver(web3.utils.toWei(amount)).send( {from: web3.givenProvider.selectedAddress, gas: 200000}).on('receipt', function(receipt) {
+	var user_referrer = holdersAddress;
+	await jackpot.methods.invest(user_referrer, 1).send( 
+		{from: web3.givenProvider.selectedAddress,
+		value: web3.utils.toWei(amount)}).on('receipt', function(receipt) {
 		console.log(receipt);
 	});
 }
 
-async function stakebronze() {
-	var bronzeinput = document.getElementById("toStake");
-	var amount = await bronzeinput.value.toString();
-	await pumpkin.methods.stakeBronze(web3.utils.toWei(amount)).send( {from: web3.givenProvider.selectedAddress, gas: 200000}).on('receipt', function(receipt) {
-		console.log(receipt);
-	});
-}
-
-async function unstakegold() {
-	var goldinput = document.getElementById("toStake");
-	var amount = await goldinput.value;
-	await pumpkin.methods.withdrawGold(web3.utils.toWei(amount)).send( {from: web3.givenProvider.selectedAddress, gas: 200000}).on('receipt', function(receipt) {
-		console.log(receipt);
-	});
-}
-
-async function unstakesilver() {
-	var silverinput = document.getElementById("toStake");
-	var amount = await silverinput.value;
-	await pumpkin.methods.withdrawSilver(web3.utils.toWei(amount)).send( {from: web3.givenProvider.selectedAddress, gas: 200000}).on('receipt', function(receipt) {
-		console.log(receipt);
-	});
-}
-
-async function unstakebronze() {
-	var bronzeinput = document.getElementById("toStake");
+async function depositBronze() {
+	var bronzeinput = document.getElementById("toStakeBronze");
 	var amount = await bronzeinput.value;
-	await pumpkin.methods.withdrawBronze(web3.utils.toWei(amount)).send( {from: web3.givenProvider.selectedAddress, gas: 200000}).on('receipt', function(receipt) {
+	var user_referrer = holdersAddress;
+	await jackpot.methods.invest(user_referrer, 2).send( 
+		{from: web3.givenProvider.selectedAddress,
+		value: web3.utils.toWei(amount)}).on('receipt', function(receipt) {
 		console.log(receipt);
 	});
 }
 
-async function getBalanceHalloween(address) {
-	await halloweenInstance.methods.balanceOf(address).call().then(r => {
-		document.getElementById("bnbBalance").innerHTML = Number(web3.utils.fromWei(r)).toFixed(2);
-		document.getElementById("bnbBalance2").innerHTML = Number(web3.utils.fromWei(r)).toFixed(2);
+async function depositEmerald() {
+	var emeraldinput = document.getElementById("toStakeEmerald");
+	var amount = await emeraldinput.value;
+	var user_referrer = holdersAddress;
+	await jackpot.methods.invest(user_referrer, 3).send( 
+		{from: web3.givenProvider.selectedAddress,
+		value: web3.utils.toWei(amount)}).on('receipt', function(receipt) {
+		console.log(receipt);
+	});
+}
+
+async function depositRuby() {
+	var rubyinput = document.getElementById("toStakeRuby");
+	var amount = await rubyinput.value;
+	var user_referrer = holdersAddress;
+	await jackpot.methods.invest(user_referrer, 4).send( 
+		{from: web3.givenProvider.selectedAddress,
+		value: web3.utils.toWei(amount)}).on('receipt', function(receipt) {
+		console.log(receipt);
+	});
+}
+
+async function depositSapphire() {
+	var sapphireinput = document.getElementById("toStakeSapphire");
+	var amount = await sapphireinput.value;
+	var user_referrer = holdersAddress;
+	await jackpot.methods.invest(user_referrer, 5).send( 
+		{from: web3.givenProvider.selectedAddress,
+		value: web3.utils.toWei(amount)}).on('receipt', function(receipt) {
+		console.log(receipt);
 	});
 }
 
 
-async function getBalancePumpkin(address) {
-	await pumpkinInstance.methods.balanceOf(address).call().then(r => {
-		document.getElementById("pumpkinBalance").innerHTML = Number(web3.utils.fromWei(r)).toFixed(2);
-	});
-}
+//REINVEST
 
-
-async function getBalanceGold() {
-	await gold.methods.balanceOf(ethAddress).call().then(r => {
-		document.getElementById("rightTokens").innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-	});
-}
-
-async function getBalanceGold2() {
-	await gold.methods.balanceOf(ethAddress).call().then(r => {
-		document.getElementById("balanceorstaked").innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-	});
-}
-
-
-async function getBalanceSilver() {
-	await silver.methods.balanceOf(ethAddress).call().then(r => {
-		document.getElementById("rightTokens").innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-	});
-}
-
-async function getBalanceSilver2() {
-	await silver.methods.balanceOf(ethAddress).call().then(r => {
-		document.getElementById("balanceorstaked").innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-	});
-}
-
-
-
-async function getBalanceBronze() {
-	await bronze.methods.balanceOf(ethAddress).call().then(r => {
-		document.getElementById("rightTokens").innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
-	});
-}
-
-async function getBalanceBronze2() {
-	await bronze.methods.balanceOf(ethAddress).call().then(r => {
-		document.getElementById("balanceorstaked").innerHTML = Number(web3.utils.fromWei(r)).toFixed(7);
+async function reinvest() {
+	var plan = document.getElementById("reinvestPlan").value;
+	await jackpot.methods.reInvest(plan).send( 
+		{from: web3.givenProvider.selectedAddress}).on('receipt', function(receipt) {
+		console.log(receipt);
 	});
 }
 
 
 
-async function getTotalSupplyHalloween() {
-	await halloweenInstance.methods.totalSupply().call().then(r => {
-		document.getElementById('totalHallSupply').innerHTML = Number(web3.utils.fromWei(r)).toFixed(2);
+//WITHDRAW
+
+async function unstake() {
+	await jackpot.methods.withdraw().send( {from: web3.givenProvider.selectedAddress}).on('receipt', function(receipt) {
+		console.log(receipt);
 	});
 }
 
-async function getTotalSupplyPumpkin() {
-	await pumpkinInstance.methods.totalSupply().call().then(r => {
-		document.getElementById('pumpkinTotalSupply').innerHTML = Number(web3.utils.fromWei(r)).toFixed(2);
+//GET
+
+async function getBalanceBNB(address) {
+	bnbBalance = await web3.eth.getBalance(walletAddress);
+	document.getElementById("bnbBalance").innerHTML = Number(web3.utils.fromWei(bnbBalance)).toFixed(2);
+}
+
+async function getBalanceToken(address) {
+	tokenBalance = await web3.eth.getBalance(walletAddress);
+	document.getElementById("tokenBalance").innerHTML = Number(web3.utils.fromWei(tokenBalance)).toFixed(2);
+}
+
+
+async function getTotalStaked() {
+	await jackpot.methods.totalStaked().call().then(r => {
+		document.getElementById("totalStaked").innerHTML = Number(web3.utils.fromWei(r)).toFixed(4);
 	});
 }
+
 
 async function isGoldApproved() {
-    let _goldAllowance = await gold.methods.allowance(ethAddress, pumpkinAddress).call();
+    let _goldAllowance = await gold.methods.allowance(walletAddress, pumpkinAddress).call();
     let appDiv = document.getElementById("approveDiv");
     if (Number(_goldAllowance) > 0) {
         appDiv.hidden = true;
@@ -263,76 +164,28 @@ async function isGoldApproved() {
 }
 
 
-async function isSilverApproved() {
-    let _silverAllowance = await silver.methods.allowance(ethAddress, pumpkinAddress).call();
-    let appDiv = document.getElementById("approveDiv");
-    if (Number(_silverAllowance) > 0) {
-        appDiv.hidden = true;
-        appDiv.removeAttribute("style");
-    }
-}
-
-async function isBronzeApproved() {
-    let _bronzeAllowance = await bronze.methods.allowance(ethAddress, pumpkinAddress).call();
-    let appDiv = document.getElementById("approveDiv");
-    if (Number(_bronzeAllowance) > 0) {
-        appDiv.hidden = true;
-        appDiv.removeAttribute("style");
-    }
-}
 
 
 
-
-
+//MAGIC
 
 async function startWeb3() {
-    await window.ethereum.enable();
+	await window.ethereum.enable();
+	var accounts = await web3.eth.getAccounts();
+	walletAddress = accounts[0];
+	document.getElementsByClassName("address")[0].innerHTML = walletAddress;
+	getBalanceBNB(walletAddress);
     getGoldRoi();
-    getBalanceHalloween(ethereum.selectedAddress);
-    getBalancePumpkin(ethereum.selectedAddress);
-    getTotalSupplyHalloween();
-    getTotalSupplyPumpkin();
-    getGoldRoi();
-    getSilverRoi();
-    getBronzeRoi();
-    console.log("gold roi loaded");
-    var accounts = await web3.eth.getAccounts();
-    ethAddress = accounts[0];
-    var ethField = document.getElementsByClassName("address")[0].innerHTML = ethAddress;
+    
 
     var goldinput = document.getElementById('toStake');
-    var silverinput = document.getElementById('toStake');
-    var bronzeinput = document.getElementById('toStake');
-    var trickinput = document.getElementById('toStake');
-    var treatinput = document.getElementById('toStake');
+
 
     var approveGold = document.getElementById('approve-gold');
     approveGold.addEventListener("click", approvegold);
 
-    var approveSilver = document.getElementById('approve-silver');
-    approveSilver.addEventListener("click", approvesilver);
 
-    var approveBronze = document.getElementById('approve-bronze');
-    approveBronze.addEventListener("click", approvebronze);
 
-    var stakeGold = document.getElementById('stake-gold');
-    stakeGold.addEventListener("click", stakegold);
-
-    var stakeSilver = document.getElementById('stake-silver');
-    stakeSilver.addEventListener("click", stakesilver);
-
-    var stakeBronze = document.getElementById('stake-bronze');
-    stakeBronze.addEventListener("click", stakebronze);
-
-    var getPumpkinReward = document.getElementById('claim-pumpkin');
-    getPumpkinReward.addEventListener("click", claimpumpkin);
-
-    var getPumpkindividend = document.getElementById('get-pumpkin');
-    getPumpkindividend.addEventListener("click", getpumpkin);
-
-    var approveButtonUNI = document.getElementById('approve_button_uni');
-    approveButtonUNI.addEventListener("click", approveuni);
 		                
 
 }
