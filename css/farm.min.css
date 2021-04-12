@@ -1,0 +1,998 @@
+html,
+body {
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: #909090;
+    background-color: #151515;
+}
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #151515;
+    background-attachment: local;
+}
+* {
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active,
+a {
+    -webkit-appearance: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+a {
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+h2 {
+    color: #e1e1e1;
+    text-align: left;
+    width: 100%;
+}
+#farm {
+    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+#farm .header {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem 0rem 1rem;
+}
+#farm .header .main_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#farm .header .main_menu a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    pointer-events: auto;
+    color: #df6718;
+}
+#farm .header .main_menu a:hover,
+#farm .header .main_menu a:active,
+#farm .header .main_menu a:visited {
+    color: #df6718;
+}
+#farm .header .main_menu a .logo img {
+    height: 2.65rem;
+}
+#farm .header .main_menu a .name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+#farm .header .main_menu nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+#farm .header .main_menu nav a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    pointer-events: auto;
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: #87502a;
+    font-weight: 700;
+}
+#farm .header .main_menu nav a:hover,
+#farm .header .main_menu nav a:active,
+#farm .header .main_menu nav a:visited {
+    color: #87502a;
+}
+#farm .header .main_menu nav a.active {
+    color: #df6718;
+}
+#farm .header .wallet_connect {
+    font-weight: 200;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#farm .header .wallet_connect .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #87502a;
+    border: 1px solid #87502a;
+    border-radius: 0.5rem;
+}
+#farm .header .wallet_connect .inner .balance {
+    font-family: "Inter";
+    color: #e1e1e1;
+    margin: 0rem 1rem;
+}
+#farm .header .wallet_connect .inner .address {
+    display: none;
+    font-weight: 700;
+    color: #df6718;
+    padding: 0.3rem 1rem;
+    background-color: #202020;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+#farm .sub_header {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+#farm .sub_header .logo img {
+    height: 5rem;
+}
+#farm .sub_header .name {
+    position: relative;
+    top: -1rem;
+    color: #df6718;
+    font-size: 3rem;
+    font-weight: 700;
+}
+#farm .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    margin: 1rem auto 4rem auto;
+    padding: 0 2rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+}
+#farm .content .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+#farm .content .stats .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    background-color: #202020;
+    border: 2px solid #202020;
+    margin: 0.7rem;
+    padding: 1.5rem 1rem 0rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+#farm .content .stats .inner:hover {
+    background-color: #282828;
+    border: 2px solid #282828;
+}
+#farm .content .stats .inner.balance,
+#farm .content .stats .inner.circulation,
+#farm .content .stats .inner.total_supply,
+#farm .content .stats .inner.harvest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+#farm .content .stats .inner.balance .label,
+#farm .content .stats .inner.circulation .label,
+#farm .content .stats .inner.total_supply .label,
+#farm .content .stats .inner.harvest .label {
+    font-family: "Inter";
+    margin-top: 0.5rem;
+}
+#farm .content .stats .inner.balance > .value,
+#farm .content .stats .inner.circulation > .value,
+#farm .content .stats .inner.total_supply > .value,
+#farm .content .stats .inner.harvest > .value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    color: #e1e1e1;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+}
+#farm .content .stats .inner.balance > .value img,
+#farm .content .stats .inner.circulation > .value img,
+#farm .content .stats .inner.total_supply > .value img,
+#farm .content .stats .inner.harvest > .value img {
+    position: relative;
+    max-width: 3rem;
+    margin-right: 1rem;
+    top: 0.5rem;
+}
+#farm .content .earn {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+#farm .content .earn button {
+    position: relative;
+    z-index: 10;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    outline: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: #df6718;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#farm .content .earn button:hover {
+    opacity: 0.8;
+}
+#farm .content .farm_info {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 33%;
+    flex: 1 0 33%;
+    overflow: hidden;
+    -webkit-box-flex: inherit;
+    -ms-flex-positive: inherit;
+    flex-grow: inherit;
+}
+#farm .content .farm_info .inner {
+    position: relative;
+    overflow: hidden;
+    background-color: #202020;
+    border: 2px solid #202020;
+    margin: 0.7rem;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+}
+#farm .content .farm_info .inner:hover {
+    background-color: #282828;
+    border: 2px solid #282828;
+}
+#farm .content .farm_info .inner .shadow_logo {
+    position: absolute;
+    width: 90%;
+    opacity: 0.06;
+    top: -15%;
+    right: -15%;
+    z-index: 1;
+}
+#farm .content .farm_info .inner .badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(45deg, transparent 0%, transparent 50%, #df6718 51%, #df6718 100%);
+    border-top-right-radius: 0.5rem;
+}
+#farm .content .farm_info .inner .badge.clock {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACLz2ctAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3VpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDQ2MCwgMjAyMC8wNS8xMi0xNjowNDoxNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1ODBlYjg5Ni04MGNlLTQ5OTMtYTA1Yy04MmI2MDM3YmJmN2UiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkY0NkUzM0QwMUFGMTFFQjhFNjlEMjNGNjFCODA4M0EiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkY0NkUzM0MwMUFGMTFFQjhFNjlEMjNGNjFCODA4M0EiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxMTg0Yzc2NC00N2I0LTQ4NWEtYjZlNy00MmJmZWYyZTIwNzciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTgwZWI4OTYtODBjZS00OTkzLWEwNWMtODJiNjAzN2JiZjdlIi8+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)
+        right 0 no-repeat;
+    background-size: contain;
+}
+#farm .content .farm_info .inner .badge.clock .timer {
+    font-family: "Inter";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    width: 80px;
+    height: 80px;
+    color: #e1e1e1;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+#farm .content .farm_info .inner .logo {
+    text-align: center;
+}
+#farm .content .farm_info .inner .logo img {
+    max-width: 4rem;
+    margin: 0.5 auto;
+    width: 100%;
+}
+#farm .content .farm_info .inner > .name {
+    text-align: center;
+    color: #e1e1e1;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+#farm .content .farm_info .inner .stake,
+#farm .content .farm_info .inner .earn,
+#farm .content .farm_info .inner .roi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.4rem 0rem;
+}
+#farm .content .farm_info .inner .stake .label,
+#farm .content .farm_info .inner .earn .label,
+#farm .content .farm_info .inner .roi .label {
+    font-family: "Inter";
+}
+#farm .content .farm_info .inner .stake .name,
+#farm .content .farm_info .inner .earn .name,
+#farm .content .farm_info .inner .roi .name {
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    color: #e1e1e1;
+    font-weight: 700;
+}
+#farm .content .farm_info .inner .roi {
+    margin: 1.2rem 0rem;
+}
+#farm .content .farm_info .inner .button button {
+    position: relative;
+    z-index: 10;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    outline: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #df6718;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#farm .content .farm_info .inner .button button:hover {
+    opacity: 0.8;
+}
+#farm .content .farm_info .inner.special {
+    border: 2px solid #df6718;
+}
+#farm .content .farm_info .inner .staking .available {
+    width: 100%;
+    padding: 0;
+    font-size: 1.2rem;
+    display: block;
+    color: #e1e1e1;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+#farm .content .farm_info .inner .staking .available {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+#farm .content .farm_info .inner .staking .value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0rem 0rem 2rem 0rem;
+}
+#farm .content .farm_info .inner .staking .value input {
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #202020;
+    border: none;
+    outline: none;
+    color: #e1e1e1;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+}
+#farm .content .farm_info .inner .staking .value button {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    margin-left: 0.5rem;
+    position: relative;
+    z-index: 10;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    outline: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #df6718;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#farm .content .farm_info .inner .staking .value button:hover {
+    opacity: 0.8;
+}
+#farm .content .farm_info .inner .staking .value button.button_50 {
+    margin-right: 0.5rem;
+}
+#farm .content .farm_info .inner .staking .value button:last-child {
+    margin-right: 0rem;
+}
+#farm .content .farm_info .inner .staking .button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+#farm .content .farm_info .inner .staking .button button {
+    position: relative;
+    z-index: 10;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    outline: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #df6718;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#farm .content .selected_farm {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: none;
+}
+#farm .content .selected_farm .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    background-color: #202020;
+    border: 2px solid #202020;
+    margin: 0.7rem;
+    padding: 1.5rem 1rem 0rem 1rem;
+    border-radius: 0.5rem;
+}
+#farm .content .selected_farm .inner:hover {
+    background-color: #282828;
+    border: 2px solid #282828;
+}
+#farm .content .selected_farm .inner.earned,
+#farm .content .selected_farm .inner.staked {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2rem;
+}
+#farm .content .selected_farm .inner.earned .logo img,
+#farm .content .selected_farm .inner.staked .logo img {
+    width: 4rem;
+}
+#farm .content .selected_farm .inner.earned > .value,
+#farm .content .selected_farm .inner.staked > .value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    white-space: nowrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    color: #e1e1e1;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+#farm .content .selected_farm .inner.earned .label,
+#farm .content .selected_farm .inner.staked .label {
+    font-family: "Inter";
+    white-space: nowrap;
+}
+#farm .content .selected_farm .inner.earned .button,
+#farm .content .selected_farm .inner.staked .button {
+    margin-top: 2rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+#farm .content .selected_farm .inner.earned .button button,
+#farm .content .selected_farm .inner.staked .button button {
+    position: relative;
+    z-index: 10;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    outline: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #df6718;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#farm .content .selected_farm .inner.earned .button button:hover,
+#farm .content .selected_farm .inner.staked .button button:hover {
+    opacity: 0.8;
+}
+#farm .content .selected_farm .inner.earned .button button.button_50,
+#farm .content .selected_farm .inner.staked .button button.button_50 {
+    margin-right: 0.5rem;
+}
+#farm .content .selected_farm .inner.earned .button button:last-child,
+#farm .content .selected_farm .inner.staked .button button:last-child {
+    margin-right: 0rem;
+}
+#farm .content:after {
+    content: "";
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+}
+#farm .popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#farm .popup .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 21, 21, 0.9);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2rem;
+}
+#farm .popup .box .inner {
+    max-width: 400px;
+    width: 100%;
+    background-color: #202020;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#farm .popup .box .inner .header,
+#farm .popup .box .inner .available {
+    width: 100%;
+    padding: 0;
+    font-size: 1.2rem;
+    display: block;
+    color: #e1e1e1;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+#farm .popup .box .inner .available {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+#farm .popup .box .inner .value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0rem 0rem 2rem 0rem;
+}
+#farm .popup .box .inner .value input {
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #282828;
+    border: none;
+    outline: none;
+    color: #e1e1e1;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+}
+#farm .popup .box .inner .value button {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    margin-left: 0.5rem;
+    position: relative;
+    z-index: 10;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    outline: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #df6718;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#farm .popup .box .inner .value button:hover {
+    opacity: 0.8;
+}
+#farm .popup .box .inner .value button.button_50 {
+    margin-right: 0.5rem;
+}
+#farm .popup .box .inner .value button:last-child {
+    margin-right: 0rem;
+}
+#farm .popup .box .inner .button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+#farm .popup .box .inner .button button {
+    position: relative;
+    z-index: 10;
+    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    outline: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #df6718;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#farm .popup .box .inner .button button:hover {
+    opacity: 0.8;
+}
+#farm .popup .box .inner .button button.button_50 {
+    margin-right: 0.5rem;
+}
+#farm .popup .box .inner .button button:last-child {
+    margin-right: 0rem;
+}
+#farm .footer {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+#farm .footer a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    pointer-events: auto;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: #87502a;
+    margin: 0rem 1rem;
+    padding: 0.5rem;
+    font-weight: 700;
+}
+#farm .footer a:hover,
+#farm .footer a:active,
+#farm .footer a:visited {
+    color: #87502a;
+}
+#farm .footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    #farm {
+        height: 100%;
+    }
+    #farm .header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    #farm .header .main_menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #farm .header .main_menu a {
+        margin: 0rem 2rem;
+    }
+    #farm .header .main_menu nav {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    #farm .header .main_menu nav a {
+        margin: 0 1rem;
+    }
+    #farm .header .wallet_connect {
+        margin-top: 1rem;
+    }
+    #farm .sub_header {
+        display: none;
+    }
+    #farm .content {
+        margin-top: 3rem;
+    }
+    #farm .content .farm_info {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+        flex: 1 0 50%;
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+    }
+    #farm .content .stats {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+    #farm .content .stats .inner.balance,
+    #farm .content .stats .inner.circulation,
+    #farm .content .stats .inner.total_supply,
+    #farm .content .stats .inner.harvest {
+        padding: 1rem 2rem;
+    }
+    #farm .content .stats .inner.balance .label,
+    #farm .content .stats .inner.circulation .label,
+    #farm .content .stats .inner.total_supply .label,
+    #farm .content .stats .inner.harvest .label {
+        font-family: "Inter";
+        margin-top: 0.5rem;
+    }
+    #farm .content .stats .inner.balance > .value,
+    #farm .content .stats .inner.circulation > .value,
+    #farm .content .stats .inner.total_supply > .value,
+    #farm .content .stats .inner.harvest > .value {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    #farm .content .stats .inner.balance > .value img,
+    #farm .content .stats .inner.circulation > .value img,
+    #farm .content .stats .inner.total_supply > .value img,
+    #farm .content .stats .inner.harvest > .value img {
+        position: relative;
+        max-width: 2rem;
+        margin-right: 1rem;
+        top: 0.5rem;
+    }
+    #farm .content .selected_farm {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 620px) {
+    #farm .content .farm_info {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+        flex: 1 0 100%;
+    }
+    #farm .content .stats {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #farm .content .stats .value {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+/*# sourceMappingURL=farm.min.css.map */
