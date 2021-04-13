@@ -1,13 +1,14 @@
 html,
 body {
-    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     color: #909090;
-    background-color: #151515;
+    background: rgb(0,0,0);
+    background: linear-gradient(48deg, rgba(0,0,0,1) 0%, rgba(1,35,74,1) 100%);
 }
 body {
     background-position: center center;
@@ -129,16 +130,16 @@ h2 {
     pointer-events: auto;
     margin-left: 2rem;
     font-size: 1rem;
-    color: #87502a;
+    color: #fff;
     font-weight: 700;
 }
 #farm .header .main_menu nav a:hover,
 #farm .header .main_menu nav a:active,
 #farm .header .main_menu nav a:visited {
-    color: #87502a;
+    color: #fff;
 }
 #farm .header .main_menu nav a.active {
-    color: #df6718;
+    color: #01d109;
 }
 #farm .header .wallet_connect {
     font-weight: 200;
@@ -164,21 +165,22 @@ h2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #87502a;
-    border: 1px solid #87502a;
+    background-color: #ffbf17;
+    border: 1px solid #ffbf17;
     border-radius: 0.5rem;
 }
 #farm .header .wallet_connect .inner .balance {
     font-family: "Inter";
-    color: #e1e1e1;
+    color: #ffffff;
+    font-weight: 500;
     margin: 0rem 1rem;
 }
 #farm .header .wallet_connect .inner .address {
     display: none;
     font-weight: 700;
-    color: #df6718;
+    color: #000000;
     padding: 0.3rem 1rem;
-    background-color: #202020;
+    background-color: #ffffff;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
