@@ -99,12 +99,12 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
     pointer-events: auto;
-    color: #df6718;
+    color: #fff;
 }
 #farm .header .main_menu a:hover,
 #farm .header .main_menu a:active,
 #farm .header .main_menu a:visited {
-    color: #df6718;
+    color: #fff;
 }
 #farm .header .main_menu a .logo img {
     height: 2.65rem;
@@ -139,7 +139,7 @@ h2 {
     color: #fff;
 }
 #farm .header .main_menu nav a.active {
-    color: #01d109;
+    color: #ffbf17;
 }
 #farm .header .wallet_connect {
     font-weight: 200;
@@ -172,12 +172,12 @@ h2 {
 #farm .header .wallet_connect .inner .balance {
     font-family: "Inter";
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0rem 1rem;
 }
 #farm .header .wallet_connect .inner .address {
     display: none;
-    font-weight: 700;
+    font-weight: 500;
     color: #000000;
     padding: 0.3rem 1rem;
     background-color: #ffffff;
@@ -203,14 +203,16 @@ h2 {
     margin-bottom: 0rem;
 }
 #farm .sub_header .logo img {
-    height: 5rem;
+    height: 8rem;
+    transform: rotate(20deg);
 }
 #farm .sub_header .name {
     position: relative;
     top: -1rem;
-    color: #df6718;
+    color: #fff;
     font-size: 3rem;
     font-weight: 700;
+    padding: 8px;
 }
 #farm .content {
     display: -webkit-box;
@@ -456,7 +458,8 @@ h2 {
     padding: 0.5rem 1rem;
     text-align: center;
     width: 100%;
-    background-color: #df6718;
+    background: rgb(81,204,51);
+background: linear-gradient(90deg, rgba(81,204,51,1) 10%, rgba(151,3,231,0.9361111111111111) 62%, rgba(255,221,14,1) 100%);
     color: #e1e1e1;
     border: none;
     border-radius: 0.5rem;
