@@ -204,8 +204,22 @@ h2 {
 }
 #farm .sub_header .logo img {
     height: 8rem;
-    transform: rotate(20deg);
-}
+    display: inline-block;
+    padding: 1px;
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+    }
+      
+    @keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+        }
+    }
+      
+
 #farm .sub_header .name {
     position: relative;
     top: -1rem;
@@ -324,8 +338,8 @@ h2 {
     outline: 0;
     padding: 0.5rem 1rem;
     text-align: center;
-    background-color: #df6718;
-    color: #e1e1e1;
+    background-color: #ffbf17;
+    color: #fff;
     border: none;
     border-radius: 0.5rem;
     font-weight: 700;
@@ -443,7 +457,7 @@ h2 {
 #farm .content .farm_info .inner .stake .name,
 #farm .content .farm_info .inner .earn .name,
 #farm .content .farm_info .inner .roi .name {
-    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
     color: #e1e1e1;
     font-weight: 700;
 }
@@ -453,25 +467,25 @@ h2 {
 #farm .content .farm_info .inner .button button {
     position: relative;
     z-index: 10;
-    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     outline: 0;
     padding: 0.5rem 1rem;
     text-align: center;
     width: 100%;
-    background: rgb(81,204,51);
-background: linear-gradient(90deg, rgba(81,204,51,1) 10%, rgba(151,3,231,0.9361111111111111) 62%, rgba(255,221,14,1) 100%);
+    background: rgb(62,232,21);
+    background: linear-gradient(90deg, rgba(62,232,21,1) 10%, rgba(47,20,249,1) 50%, rgba(255,220,3,1) 90%);
     color: #e1e1e1;
-    border: none;
+    border: 1px solid #fff;
     border-radius: 0.5rem;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 800;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 #farm .content .farm_info .inner .button button:hover {
     opacity: 0.8;
 }
 #farm .content .farm_info .inner.special {
-    border: 2px solid #df6718;
+    border: 2px solid #ffbf17;
 }
 #farm .content .farm_info .inner .staking .available {
     width: 100%;
@@ -524,17 +538,17 @@ background: linear-gradient(90deg, rgba(81,204,51,1) 10%, rgba(151,3,231,0.93611
     margin-left: 0.5rem;
     position: relative;
     z-index: 10;
-    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
     outline: 0;
     padding: 0.5rem 1rem;
     text-align: center;
-    width: 100%;
-    background-color: #df6718;
-    color: #e1e1e1;
-    border: none;
+    width: 80%;
+    background-color: #ffbf17;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 0.5rem;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 800;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 #farm .content .farm_info .inner .staking .value button:hover {
@@ -663,12 +677,12 @@ background: linear-gradient(90deg, rgba(81,204,51,1) 10%, rgba(151,3,231,0.93611
 #farm .content .selected_farm .inner.staked .button button {
     position: relative;
     z-index: 10;
-    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     outline: 0;
     padding: 0.5rem 1rem;
     text-align: center;
     width: 100%;
-    background-color: #df6718;
+    background-color: #ffbf17;
     color: #e1e1e1;
     border: none;
     border-radius: 0.5rem;
@@ -870,7 +884,7 @@ background: linear-gradient(90deg, rgba(81,204,51,1) 10%, rgba(151,3,231,0.93611
     pointer-events: auto;
     white-space: nowrap;
     font-size: 1rem;
-    color: #87502a;
+    color: #fff;
     margin: 0rem 1rem;
     padding: 0.5rem;
     font-weight: 700;
@@ -878,7 +892,7 @@ background: linear-gradient(90deg, rgba(81,204,51,1) 10%, rgba(151,3,231,0.93611
 #farm .footer a:hover,
 #farm .footer a:active,
 #farm .footer a:visited {
-    color: #87502a;
+    color: #ffbf17;
 }
 #farm .footer a:hover {
     text-decoration: underline;
