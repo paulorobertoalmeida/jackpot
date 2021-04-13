@@ -1031,4 +1031,13 @@ h2 {
         justify-content: center;
     }
 }
+
+
+#farm .content .links-about li {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    min-width: 250px;    
+}
+
 /*# sourceMappingURL=farm.min.css.map */
