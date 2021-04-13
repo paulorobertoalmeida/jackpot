@@ -322,10 +322,25 @@ h2 {
 #farm .content .stats .inner.total_supply > .value img,
 #farm .content .stats .inner.harvest > .value img {
     position: relative;
-    max-width: 3rem;
+    max-width: 5rem;
     margin-right: 1rem;
-    top: 0.5rem;
-}
+    transform: translateX(40deg);
+    animation: one 2s infinite;
+    animation-direction: alternate;
+    
+  }
+  
+  @keyframes one {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(50deg);
+      
+    }
+    
+  }
+  
 #farm .content .earn {
     width: 100%;
     text-align: center;
@@ -334,15 +349,16 @@ h2 {
 #farm .content .earn button {
     position: relative;
     z-index: 10;
-    font-family: "Baloo Da 2", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     outline: 0;
     padding: 0.5rem 1rem;
     text-align: center;
-    background-color: #ffbf17;
+    background: rgb(38,189,2);
+    background: linear-gradient(90deg, rgba(38,189,2,0.9552631578947368) 10%, rgba(255,220,3,1) 33%, rgba(214,118,229,1) 70%, rgba(20,235,249,1) 90%);
     color: #fff;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 700;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    font-weight: 900;
     font-size: 1rem;
     cursor: pointer;
 }
@@ -486,6 +502,7 @@ h2 {
 }
 #farm .content .farm_info .inner.special {
     border: 2px solid #ffbf17;
+    border: 1px solid #fff;
 }
 #farm .content .farm_info .inner .staking .available {
     width: 100%;
@@ -684,7 +701,7 @@ h2 {
     width: 100%;
     background-color: #ffbf17;
     color: #e1e1e1;
-    border: none;
+    border: 1px solid #fff;
     border-radius: 0.5rem;
     font-weight: 700;
     font-size: 1rem;
@@ -809,7 +826,7 @@ h2 {
     width: 100%;
     background-color: #df6718;
     color: #e1e1e1;
-    border: none;
+    border: 1px solid #fff;
     border-radius: 0.5rem;
     font-weight: 700;
     font-size: 1rem;
@@ -846,7 +863,7 @@ h2 {
     width: 100%;
     background-color: #df6718;
     color: #e1e1e1;
-    border: none;
+    border: 1px solid #fff;
     border-radius: 0.5rem;
     font-weight: 700;
     font-size: 1rem;
