@@ -36,7 +36,7 @@
         <div id="farm">
            <div class="header">
                 <div class="main_menu">
-                    <a href=".">
+                    <a href="landingPage.html">
                         <div class="logo">
                             <img src="images/token/bnbjplogo.png" alt="BNB JackPot" \>
                         </div>
@@ -47,7 +47,7 @@
                     <nav>
                         <a href=".">Home</a>
                         <a href="about.html">About</a>
-                        <a href="affiliate.html" class="active">Affiliate Program</a>
+                        <a href="affiliate.html">Affiliate Program</a>
                     </nav>
                 </div>
                 <div class="wallet_connect">
@@ -74,72 +74,7 @@
             <div class="affiliate-link"> 
 
 
-                <!-- Form Affiliate-->
-
-                
-                    <h2>Earn Money By Reffering Us<span style="color: #51cc33">.</span></h2>
-                <p>
-                    <h4>How Is this Possible?</h4>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, quod, officia maiores cumque quibusdam hic id vero veniam perferendis, harum quam cum alias possimus magni excepturi a beatae repellendus nemo inventore? Aliquam excepturi error impedit.
-                    </p>
-                    <hr>
-    
-                    <h4>How Much Money Can I Make?</h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sed, asperiores officia iure atque aliquam cumque aspernatur reprehenderit exercitationem sunt magni itaque ullam laborum eos, optio quas quaerat tempora suscipit temporibus perspiciatis voluptatum maiores repudiandae dolores. Praesentium consequatur, recusandae maxime, labore deserunt fugiat hic ducimus laborum, voluptas sunt accusantium deleniti!
-                </p>
-                
-                <hr>
-                    <h4>How Can I Get My Money?</h4>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, labore voluptatum iure ex ratione ut, odio debitis doloremque, optio totam culpa id non nostrum autem nobis. Sit, velit omnis. Illum vero et ratione eos quidem?
-                </p>
-
-                <hr>
-                
-                    <h4>How Can I use?</h4>
-                <p> 
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus officiis illo, aspernatur totam non iure. Ut deleniti dicta fuga quos dolorem labore ea voluptates odit aut quo, similique ab veritatis explicabo eligendi, ipsa consectetur quae?  
-                </p>
-                <hr>
-                
-
-                <div class="form-style">
-                    <h1>Lets Start!!!!</h1>
-                    <form name="me">
-                    <p>
-                        Type your affiliate code in the box and click the button:
-                        <input type="text" name="AffCode" >
-                            <button id="linkGenetator" type="button"
-                            onClick="CreateAffiliateLink(this.form)">Personalize your Affiliate code
-                            </button>
-                            </p>
-
-                            <p>
-                            This is Your Refferal Link:<br>
-                        <input type="text" name="b" size="46"
-                        value="http://bnbfortunes.com/#XXXXX">
-                        </p>
-                    </form>
-            </div>
-                
-
-                <script type="text/javascript" language="JavaScript">
-    
-                function CreateAffiliateLink(F) {
-                  var findstring = "XXXXX";
-                  var ts='var replacewith=document.'+F.name+'.AffCode.value';
-                  eval(ts);
-                  if(replacewith.length < 1) { return; }
-                  var re = new RegExp(findstring,"g")
-                  for(i=0;i<F.length;i++) {
-                    var s = new String(F.elements[i].value);
-                    if(s.length > 0) {
-                      var newstr=s.replace(re,replacewith);
-                      F.elements[i].value = newstr;
-                    }
-                  }
-                }
-            </script>
+               
 
             </div>
            <div class="footer">
