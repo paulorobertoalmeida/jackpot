@@ -388,37 +388,20 @@
                             <button id="lftButton" onClick="claimRewards()">Claim</button>
                         </div>
                     </div>
-                </div>
-                <div class="selected_farm" data-farm="">
-                    <div class="inner staked">
-                        <div class="logo">
-                            <img id="toStakeImage" src="images/token/bnb.png" alt="BNB JackPot" \>
-                        </div>
-                        <div class="value">
-                            <span id="rightTokens">0.00000</span>
-                        </div>
-                        <div class="label">
-                            -
-                        </div>
-                        <div class="button">
-                            <button class="button_50 stake">Stake</button>
-                            <button class="button_50 unstake">Unstake</button>
-                        </div>
-                    </div>
-                </div>
+                </div>              
            </div>
            <div class="content">
             <div class="stats">
                 <div class="inner balance">
                     <div class="label">
-                            Token Balance
+                            BNB in Lucky smartcontract
                     </div>
                     <div class="value">
                         <div class="logo">
                             <img src="images/token/bnb.png" alt="BNB JackPot" \>
                         </div>
                         <div class="value">
-                            <span id="tokenBalance">0.00000</span>
+                            <span id="bnbBalInF">0.00000</span>
                         </div>
                     </div>
                 </div>
@@ -429,7 +412,7 @@
                         Total invested
                     </div>
                     <div class="value">
-                        <span id="totalHallSupply">0.00000</span>
+                        <span id="totalStaked">0.00000</span>
                     </div>
                 </div>
             </div>
@@ -439,7 +422,10 @@
                         Available to Withdraw
                     </div>
                     <div class="value">
-                        0.00000
+                        <span id="availableBNB">0.00000</span>
+                    </div>
+                    <div class="earn">
+                        <button onClick="withdraw()">WITHDRAW</button>
                     </div>
                 </div>
             </div>
@@ -467,6 +453,113 @@
                 </div>
             </div>
        </div>
+       <div class="content">
+        <div class="farm_info">
+             <div class="inner">
+                 <div class="logo">
+                     <img src="images/token/gold.png" alt="BNB JackPot" \>
+                 </div>
+                 <div class="name">
+                    Global Stats
+                 </div>
+                 <div class="coin_info">
+                    <div class="stake">
+                        <div class="label">
+                            MarketCap
+                        </div>
+                        <div class="name">
+                            <span id="marketCap">0</span>$
+                        </div>
+                    </div>
+                    <div class="stake">
+                        <div class="label">
+                            Price
+                        </div>
+                        <div class="name">
+                            <span id="fortunePrice">0.00</span> $
+                        </div>
+                    </div>
+                    <div class="stake">
+                        <div class="label">
+                            Supply
+                        </div>
+                        <div class="name">
+                            <span id="totalSupply">0.00</span>
+                        </div>
+                    </div>
+                    <div class="stake">
+                        <div class="label">
+                            BNB to distribute
+                        </div>
+                        <div class="name">
+                            <span id="bnbintoken">0.00</span>
+                        </div>
+                    </div>
+                 </div>
+                 <br>
+                 <div class="name">
+                    User info
+                 </div>
+                 <div class="coin_info">
+                    <div class="stake">
+                        <div class="label">
+                            Balance
+                        </div>
+                        <div class="name">
+                            <span id="fortBalance">0.0000</span>
+                        </div>
+                    </div>
+                    <div class="stake">
+                        <div class="label">
+                            Burn Value
+                        </div>
+                        <div class="name">
+                           <span id="bnbVal">0.00</span> BNB / <span id="usdVal">0.00</span> $
+                       </div>
+                    </div>
+                    <div class="stake">
+                        <div class="label">
+                            Market Value
+                        </div>
+                        <div class="name">
+                            <span id="fortBNB">0.00</span> BNB / <span id="fortUsd">0.00</span> $
+                        </div>
+                    </div>
+             </div>
+             </div>
+         </div>
+         <div class="farm_info">
+            <div class="inner">
+                <div class="name">
+                   Burn FORT for BNB
+                </div>
+                <br>
+                <div class="staking">
+                    <div class="value">
+                        <input id="toBurn" placeholder="0" value="" oninput="updateburnBNB(this.value)">
+                        <button onClick="maxBurn()" class="max" id="maxbutton">Max</button>
+                    </div>
+                </div>
+                <br>
+                <div class="name">
+                   You will receive <span class="token_balance" id="burnBNB">0.00</span> BNB
+               </div>
+               <br>
+                <div class="button">
+                    <button onClick="burn()">Burn</button>
+                </div>
+                <br>
+                <br>
+                <div class="name">
+                    Buy / Sell
+                </div>
+                <br>
+                 <div class="button">
+                     <button onClick="burn()">Exchange</button>
+                 </div>
+            </div>
+        </div>
+    </div>
            <div class="footer">
                <a href="https://twitter.com/" target="_blank" alt="Twitter">Twitter</a>
                <a href="https://t.me/" target="_blank" alt="Telegram">Telegram</a>
