@@ -1092,12 +1092,27 @@ h2 {
 
 /* Accordion */
 
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.faq h1 {
+    color: white;
+    margin-left: 2rem;
+}
+
+
 .accordion {
+    
     background-color: #eee;
-    color: #444;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 80%;
     border: none;
     text-align: center;
     outline: none;
@@ -1132,20 +1147,24 @@ h2 {
 
 
 #farm .sub-header-content {
-    display: flex;
-    flex-direction: column;
+    
+    width: 800px;
+    
     
 }
 
 #farm .sub-header-content h1{
+    
     padding: 0.5rem;
     font-weight: 900;
     color: white;
     
 }
 
-#farm .sub-header-content p{
-    margin: 1.0rem;
+#farm .sub-header-content .greedy-text {
+    width: auto;
+    justify-content: left;
+    margin: 30px;
     font-weight: 500;
     font-size: large;
     color: white;
@@ -1172,18 +1191,26 @@ h2 {
 }
 
 
-.about-game{
+#farm .content .about-game{
     background-color: white;
     color: black;
     margin-top: 1.5rem;
-    width: 100%;
+    width: 120%;
     padding: 2rem ;
+    font-size: 16px;
+    align-items: center;
+    box-shadow: 10px 10px 8px black;
     
 }
-.about-game h1{
-   margin: 2rem;
+#farm .content .about-game h1{
+   margin: 1rem;
     
 }
+#farm .content .about-game h3{
+    margin: 1.2rem;
+     
+ }
+
 /*
 .about-game p{
     
@@ -1194,6 +1221,102 @@ h2 {
   
     
 }
+ */
+ #farm .content .how-to-play {
+    color: white;
+    margin: 1.5rem;
+    width: 100vh; 
+}
+
+
+
+#farm .content .last-winners {
+    color: white;
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 100vh; 
+}
+
+#farm .content .get-in-touch {
+    margin: 50%;
+    padding: 1rem;
+    align-items: center;
+    color: white;
+    margin:1.5rem;
+    width: 100vh; 
+}
+
+#farm .content .get-in-touch h1{
+    margin-bottom: 1.5rem;
+    flex-direction: column;    
+}
+
+#farm .content .get-in-touch h3{
+    margin-bottom: 1.5rem;
+    flex-direction: column;    
+}
+
+
+.myButton {
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    outline: 0;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    width: 30%;
+    background: rgb(255,167,66);
+    background: linear-gradient(45deg, rgba(255,167,66,1) 0%, rgba(255,45,45,1) 37%, rgba(186,48,255,1) 62%, rgba(0,232,212,1) 80%);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 1.0rem;
+    cursor: pointer;
+    margin:1vh; 
+   
+}
+
+
+#farm .content .bottomBorder {
+    /*           width style color  */
+    width: 70%;
+    border-bottom: 2px solid white;
+    margin: 1rem;
+  }
+.winner-component {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+    border-radius: 20px;
+
+}
+
+.winner-component p {
+    
+ }
+
+
+.links-about {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.links-about a {
+    color: white;
+    margin: 5px;
+}
+
+li {
+    color: white;
+}
+
 
 
 
