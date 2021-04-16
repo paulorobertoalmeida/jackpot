@@ -1110,6 +1110,17 @@ h2 {
   .active, .accordion:hover {
     background-color: rgb(139, 139, 139); 
   }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
   
   .panel {
     padding: 0 18px;
@@ -1128,17 +1139,17 @@ h2 {
 
 #farm .sub-header-content h1{
     padding: 0.5rem;
-    font-weight: 800;
+    font-weight: 900;
     color: white;
     
 }
 
 #farm .sub-header-content p{
-    margin: 1.5rem;
+    margin: 1.0rem;
     font-weight: 500;
-    font-size:x-large;
+    font-size: large;
     color: white;
-    
+    font-family: Arial;
 }
 
 #farm .sub-header-content .button {
@@ -1182,30 +1193,6 @@ h2 {
 .about-game h3{
   
     
-}
-
-
-
-#farm {
-    color: white;
-}
-
-
-#farm-2 .how-to-play {
-    margin: 1.5rem;
-}
-#farm-2 .last-winners{
-     margin: 1.5rem;
-     width: 100%;
-}
-
-#farm-2 .get-in-touch {
-    margin: 1.5rem;
-    width: 100%;
-}
-
-#farm-2 .faq{
-    margin: 1.5rem;
 }
 
 
