@@ -1197,8 +1197,12 @@ h2 {
 
 
 #farm .content .about-game{
-    background-color: white;
-    color: black;
+    background-image: url("/images/background/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
     margin-top: 1.5rem;
     width: 120%;
     padding: 2rem ;
